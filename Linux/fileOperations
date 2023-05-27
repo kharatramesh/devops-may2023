@@ -55,4 +55,32 @@
   330  touch /devops/C/C{1..2}/C{1..3}.txt
   331  touch /devops/A/A{1..2}/A{1..3}.txt
   332  tree /devops/
+--------------------------------------------------------------
+ 335  cp /devops/A/A1/A1.txt /devops/C/C2/
+  336  tree /devops
+  337  cp /devops/E/E2/E3.txt /devops/C/C1/ethree.txt
+  338  tree /devops/
+  339  mv /devops/B/B2/B2.txt /devops/D/D2/btwo.txt
+  340  tree /devops/
+  341  history
+  342  mv /devops/A/A2/A2.txt /devops/A/A2/Atwo.txt
+  343  tree /devops/
+  344  clear
+  345  cp /devops/A/A1 /devops/B/B2/
+  346  cp -r /devops/A/A1 /devops/B/B2/
+  347  tree /devops/
+  348  history
+  349  clear
+  350  ls -l /etc/passwd
+  351  date
+  352  cp /etc/passwd /devops/A/A1/passwd
+  353  ls -l /devops/A/A1/passwd
+  354  cp -p /etc/passwd /dev/A/A1/passwd1
+  355  cp -p /etc/passwd /devops/A/A1/passwd1
+  356  ls -l /devops/A/A1/passwd1
+  357  cp -pr /devops/A/A1 /devops/B/
+  358  ls -ld /devops/A/A1
+  359  ls -ld /devops/B/
+  361  ls -l /devops/B/
+  362  history
 
