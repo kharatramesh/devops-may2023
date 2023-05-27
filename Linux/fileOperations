@@ -83,4 +83,44 @@
   359  ls -ld /devops/B/
   361  ls -l /devops/B/
   362  history
+---------------------------------------------
+ 364  mkdir -p /vadapav/1/2/3/4/5/6/7/8/9
+  365  tree /vadapav/
+  366  cd /vadapav/
+  367  ls
+  368  cd 1/
+  369  ls
+  370  cd 2/
+  371  ls
+  372  cd 3/
+  373  ls
+  374  cd 4/
+  375  ls
+  376  cd 5/
+  377  cd 6/
+  378  cd 7/
+  379  cd 8/
+  380  cd 9
+  381  pwd
+  382  cd ..
+  383  pwd
+  384  cd ../..
+  385  pwd
+  386  cd ../../..
+  387  pwd
+  388  cd ../../..
+  389  pwd
+  390  cd -
+  391  cd 1/2/3/4/5/6/7/8/9/
+  392  pwd
+  393  cd -
+  394  ls
+  395  rm 1
+  396  rm -r 1
+  397  mkdir -p /vadapav/1/2/3/4/5/6/7/8/9
+  398  rm -rf 1
+  399  history
+  400  mkdir 1
+  401  rmdir 1
+  402  history
 
