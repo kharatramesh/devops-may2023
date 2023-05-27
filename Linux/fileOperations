@@ -1,0 +1,38 @@
+  249  # file I/O operations
+  250  mkdir /vadapav
+  251  cd /vadapav/
+  252  ls
+  253  touch 1.txt
+  254  ls
+  255  touch 2.txt
+  256  ls
+  257  touch {1..100000}.txt
+  258  ls
+  259  clear
+  260  # touch {1..100000}.txt
+  261  touch {a..z}.txt
+  262  touch {a..z}{1..10}{A..M}.txt
+  263  ls
+  264  history
+  265  rm ?.txt
+  266  rm -f ?.txt
+  267  rm -f ??.txt
+  268  rm -f ???.txt
+  269  rm -f ????.txt
+  270  rm -f ?????.txt
+  271  rm -f ??????.txt
+  272  ls
+  273  clear
+  274  # create a file of 1G size
+  275  # dd --diskdump
+  276  ls
+  277  dd if=/dev/zero of=1.txt bs=1M count=1000
+  278  ls -lh 1.txt
+  279  dd if=/dev/zero of=1.txt bs=1M count=1
+  280  ls -lh
+  281  dd if=/dev/zero of=2.txt bs=1M count=2
+  282  ls -lh
+  283  dd if=/dev/zero of=2.txt bs=1M count=500
+  284  ls -lh
+  285  ls -l
+  286  ls -lh
