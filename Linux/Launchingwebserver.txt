@@ -1,0 +1,22 @@
+Launching Webserver
+----------------------
+  217  hostnamectl
+  218  date
+  219  date "+%d"
+  220  date "+%d-%m-%y"
+  221  date "+%d-%b-%Y"
+  222  date "+%d-%b-%Y:%H:%M:%s"
+  223  man date
+  224  # to install any package in ilinux
+  225  # redhat/centos/fedora --- yum /dnf
+  226  # ubuntu/debian -- apt
+  227  yum install httpd
+  228  systemctl start httpd
+  229  cd /var/www/html/
+  230  ls
+  231  touch index.html
+  234  echo "I like vadapav" > index.html
+  235  cat index.html
+  236  ip a s
+  237  echo "I like vadapav/samosa" > index.html
+  238  history
