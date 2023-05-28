@@ -53,3 +53,65 @@
   564  getfacl /home/mangu/
   565  setfacl -m g:HR:r-x /home/mangu
   566  history
+  ===============
+  
+  When s permission is set on user/owner side , is called as setuid , it allows other users to use privileges of owner.
+
+When s permission is set on group side, is called as setgid, it allows group members of group to use privileges of group owner
+
+When t is set on folder , is called as sticky bit , it allows all users in system to create,modify,update and execute files created by any user in this folder , however only owner or root is allowed to delete the file.
+
+/tmp -- world writable but owner deleteable 
+
+
+ 553  # ACL -- Access Control List
+  554  useradd changu
+  555  useradd mangu
+  556  passwd changu
+  557  passwd mangu
+  558  chmod o+x /home/mangu
+  559  chmod r+x /home/mangu
+  560  chmod o+r /home/mangu
+  561  chmod o-rx /home/mangu/
+  562  ls -ld /home/mangu/
+  563  setfacl -m u:changu:r-x /home/mangu
+  564  getfacl /home/mangu/
+  565  setfacl -m g:HR:r-x /home/mangu
+  566  history
+  567  clear
+  568  passwd user1
+  569  clear
+  570  ls -l /etc/shadow
+  571  which passwd
+  572  ls -l /usr/bin/passwd
+  573  chmod u-s /usr/bin/passwd
+  574  ls -l /usr/bin/passwd
+  575  passwd user1
+  576  chmod u+s /usr/bin/passwd
+  577  passwd root
+  578  touch 1.txt
+  579  ls -l 1.txt
+  580  chmod 000 1.txt
+  581  chmod 1000 1.txt
+  582  ls -l 1.txt
+  583  chmod 2000 1.txt
+  584  ls -l 1.txt
+  585  chmod 4000 1.txt
+  586  ls -l 1.txt
+  587  chmod 7000 1.txt
+  588  ls -l 1.txt
+  589  chmod 0000 1.txt
+  590  ls -l 1.txt
+  591  chmod u+s 1.txt
+  592  ls -l 1.txt
+  593  chmod g+s 1.txt
+  594  ls -l 1.txt
+  595  chmod o+t 1.txt
+  596  ls -l 1.txt
+  597  chmod o-t 1.txt
+  598  ls -l 1.txt
+  599  chmod o+t 1.txt
+  600  history
+  601  clear
+  602  history
+
