@@ -1,0 +1,98 @@
+  413  echo $SHELL
+  414  ls
+  415  pwd
+  416  clear
+  417  useradd user1
+  418  userdel -r user1
+  419  userdel -r user2
+  420  clear
+  421  useradd user1
+  422  tail -1 /etc/passwd
+  423  tail -2 /etc/passwd
+  424  tail -5 /etc/passwd
+  425  tail -n 5 /etc/passwd
+  426  head -1 /etc/passwd
+  427  head -n 5 /etc/passwd
+  428  tail -1 /etc/passwd
+  429  # username: password related field : user id : primary group id : comments : home directory : shell
+  430  tail -1 /etc/shadow
+  431  # 100 *365 == 36500
+  432  # 100 *365 == 36500 days
+  433  # 100 *52 == 5200 days
+  434  # 100 *52 == 5200 weekends
+  435  # number of days user is created -- 1st jan 1970 -- EPOCH year
+  436  chage -m 10 user1
+  437  tail -1 /etc/shadow
+  438  chage -W 20 user1
+  439  tail -1 /etc/shadow
+  440  passwd user1
+  441  tail -1 /etc/shadow
+  442  passwd -l user1
+  443  tail -1 /etc/shadow
+  444  passwd -u user1
+  445  tail -1 /etc/shadow
+  446  chage -l
+  447  clear
+  448  userdel -r user1
+  449  # -r is used for deleting users from system along with home directory
+  450  # userdel  user1
+  451  # is used for deleting users from system along without home directory
+  452  # is used for deleting users from system  without home directory
+  453  useradd user1
+  454  passwd user1
+  455  cd /etc/skel/
+  456  ls
+  457  touch hr.jpg
+  458  touch hr.link
+  459  pwd
+  460  useradd -s /etc/skel/ user2
+  461  passwd user2
+  462  tail -1 /etc/shadow
+  463  useradd user3
+  464  passwd user3
+  465  useradd -m -s /etc/skel user5
+  466  passwd user5
+  467  useradd -m -k /etc/skel user5
+  468  useradd -m -k /etc/skel user6
+  469  passwd user6
+  470  useradd user7
+  471  passwd user7
+  472  clear
+  473  # to setup user parameters
+  474  # erricson
+  475  # ericson
+  476  # empid : 10002
+  477  # Team : IT
+  478  # designation : SI
+  479  # shell : sh
+  480  mkdir -p /canada/IT
+  481  useradd -u 10002 -d /canada/IT -s /bin/sh -g IT -G HR  omkar
+  482  groupadd IT
+  483  groupadd HR
+  484  useradd -u 10002 -d /canada/IT -s /bin/sh -g IT -G HR  omkar
+  485  useradd -u 10003 -d /canada/IT -s /bin/sh -g IT -G HR  omkar1
+  486  useradd -u 10004 -d /canada/IT/omkar2 -s /bin/sh -g IT -G HR  omkar2
+  487  passwd omkar2
+  488  # -u : userid
+  489  # -s : shell
+  490  # -g : primary group
+  491  # -G : secondary group
+  492  : -k : skel
+  493  # -d : homeDirecory
+  494  usermod -c "SI" omkar2
+  495  tail -1 /etc/passwd
+  496  vi /etc/login.defs
+  497  clear
+  498  # useradd user9
+  499  passwd user9
+  500  useradd user9
+  501  passwd user9
+  502  usermod -G HR user9
+  503  userdel -r user9
+  504  groupadd FIN
+  505  groupdel FIN
+  506  getent passwd user1
+  507  getent group user1
+  508  getent shadow user1
+  509  cat /etc/group
+  510  history
