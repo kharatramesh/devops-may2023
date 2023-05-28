@@ -1,0 +1,30 @@
+ 656  dd if=/dev/zero of=1.txt bs=1M count=1000
+  657  df -h
+  658  dd if=/dev/zero of=2.txt bs=1M count=1000
+  659  dd if=/dev/zero of=3.txt bs=1M count=1000
+  660  ls -lh
+  661  tar -cvf samosa.tar 1.txt 2.txt 3.txt
+  662  ls -lh
+  663  rm -fr 1.txt 2.txt 3.txt
+  664  ls -lh
+  665  gzip samosa.tar
+  666  ls -lh
+  667  bzip2 samosa.tar.gz
+  668  yum install bzip2
+  669  bzip2 samosa.tar.gz
+  670  ls -lh
+  671  mv samosa.tar.gz.bz2 /tmp/
+  672  ls
+  673  cd /tmp/
+  674  ls
+  675  history
+  676  ls -lh
+  677  bunzip2 samosa.tar.gz.bz2
+  678  ls -lh
+  679  gunzip samosa.tar.gz
+  680  ls -lh
+  681  tar -xvf samosa.tar
+  682  ls -lh
+  683  rm -fr samosa.tar
+  684  rm -fr *.txt
+  685  history
