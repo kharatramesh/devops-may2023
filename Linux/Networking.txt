@@ -1,1 +1,34 @@
 
+  177  nmcli connection modify enp0s9 ipv4.method manual ipv4.addresses 121.0.0.121/24 connection.autoconnect yes
+  178  nmcli c up enp0s9
+  179  ifconfig enp0s9
+  181  nmcli c modify enp0s9 ipv4.method manual ipv4.addresses 11.0.0.11/24 connection.autoconnect yes
+  182  nmcli c up enp0s3
+  183  nmcli c up enp0s9
+  184  ifconfig enp0s9
+  185  nmcli c modify enp0s9 ipv6.method manual ipv6.addresses "0001:0002:0003:0004:0005:0006:0007:0001/64" connection.autoconnect yes
+  186  nmcli c up enp0s9
+  187  ifconfig enp0s9
+  188  ping -6 1:2:3:4:5:6:7:1
+  189  ping6 1:2:3:4:5:6:7:1
+  190  ssh 1:2:3:4:5:6:7:1
+  192  history
+  193  # nmtui
+  194  # nmcli
+  195  #NetworkManager
+  196  systemctl stop NetworkManager
+  197  nmtui
+  198  nmcli
+  199  # config file
+  200  cd /etc/sysconfig/network-scripts/
+  201  ls
+  202  cat ifcfg-enp0s9
+  203  >ifcfg-enp0s9
+  204  vi ifcfg-enp0s9
+  205  ifup enp0s9
+  206  ifconfig enp0s9
+  207  ifdown enp0s9
+  208  ifup enp0s9
+  209  ifconfig enp0s9
+  210  cat ifcfg-enp0s9
+  211  history
