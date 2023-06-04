@@ -1,0 +1,31 @@
+  531  # find command
+  532  find / -type f passwd
+  533  find / -type f -name passwd
+  534  find / -type d -name passwd
+  535  find /vadapav -type f -name 1.txt
+  536  find /vadapav -type f -name 1.txt -exec rm -fr {} \;
+  537  ls
+  538  find /vadapav -type f -name 1.txt
+  539  find /vadapav -type f -name 2.txt -exec cp {} /tmp \;
+  540  ls -l /tmp/2.txt
+  541  find / -type f -size 1000M
+  542  find / -type f -size +1000M
+  543  find / -type f -size +100M
+  544  clear
+  545  dd if=/dev/zero of=1.txt bs=1M count=100
+  546  dd if=/dev/zero of=1.txt bs=1M count=200
+  547  dd if=/dev/zero of=1.txt bs=1M count=101
+  548  dd if=/dev/zero of=1.txt bs=1M count=199
+  549  dd if=/dev/zero of=1.txt bs=1M count=150
+  550  ls -ltr
+  551  dd if=/dev/zero of=2.txt bs=1M count=199
+  552  dd if=/dev/zero of=3.txt bs=1M count=150
+  553  dd if=/dev/zero of=4.txt bs=1M count=101
+  554  dd if=/dev/zero of=5.txt bs=1M count=200
+  555  ls -lh
+  556  clear
+  557  find /vadapav -type f -size +100M -exec ls -lh {} \;
+  558  find /vadapav -type f -size +150M -exec ls -lh {} \;
+  559  find /vadapav -type f -size -150M -exec ls -lh {} \;
+  560  find /vadapav -type f -size +100M -size -200M -exec ls -lh {} \;
+  561  find /vadapav -type f -size 150M -exec ls -lh {} \;
