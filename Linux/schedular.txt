@@ -1,0 +1,62 @@
+324  clear
+  325  ping server
+  326  ping client
+  327  vi /etc/hosts
+  328  cat /etc/hosts
+  329  ping server
+  330  ping client
+  331  ping google.com
+  332  clear
+  333  lsblk
+  334  ls -ld /etc/
+  335  du -sh /etc
+  336  scp -pr /etc root@client:/home/etc_`date "+%d-%b-%Y:%H:%M:%s"`
+  337  clear
+  338  rsync -cavz /etc root@client:/tmp/etc_`date "+%d-%b-%Y:%H:%M:%s"`
+  339  yum install rsync -y
+  340  rsync -cavz /etc root@client:/tmp/etc_`date "+%d-%b-%Y:%H:%M:%s"`
+  341  rsync -cavz /etc root@client:/tmp/etc
+  342  history
+  343  cd /vadapav/
+  344  ls
+  345  touch 1.sh
+  346  vi 1.sh
+  347  clear
+  348  ls
+  349  chmod a+x 1.sh
+  350  pwd
+  351  date
+  352  crontab -e
+  353  date
+  354  crontab -l
+  355  tail -10f /var/log/cron
+  356  clear
+  357  ssh-keygen -t rsa
+  358  cat /root/.ssh/id_rsa.pub
+  359  cat /root/.ssh/id_rsa
+  360  ssh client
+  361  ssh-copy-id root@client
+  362  ssh client
+  363  history
+  364  date
+  365  crontab -e
+  366  tail -10f /var/log/cron
+  367  crontab -e
+  368  crontab -l
+  369  tail -f /var/log/cron
+  370  clear
+  371  # schedular -- 5 *
+  372  # backup of /etc -- script
+  373  # scheduled in crontab
+  374  # keybased authentication (ssh-keygen -t rsa )
+  375  # keybased authentication (ssh-copy-id root@client )
+  376  # checked -- tail -10f /var/log/cron
+  377  # reboot the server
+  378  # crontab -e
+  379  # crontab -l
+  380  crontab -l
+  381  # second sat of everymonth
+  382  crontab -e
+  383  tail -10f /var/log/cron
+  384  cat /etc/cron
+  385  cat /etc/crontab
