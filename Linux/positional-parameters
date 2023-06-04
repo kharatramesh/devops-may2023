@@ -1,0 +1,18 @@
+  512  # positional parameters
+  513  set Learn Linux EveryDay And Keep Unemployment Away
+  514  echo $1
+  515  echo $7
+  516  echo $7 $2
+  517  echo $4 $7
+  518  echo $4 $7 $6
+  519  echo $*
+  520  echo $#
+  521  echo $@
+  522  touch 1.txt 2.txt 3.xttx
+  523  touch $1
+  524  echo $1
+  525  ls
+  526  echo $1-$7
+  527  touch $1-$7
+  528  ls
+  529  history
