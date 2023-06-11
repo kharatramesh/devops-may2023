@@ -21,3 +21,27 @@ echo $u1 deleted successfully
 
 cat /etc/passwd | awk -F ":" '{print $1 "\t" $3}' | awk '($2 > 500)'
 df -h | awk -F " " '{print $6 "\t" $5}' | sed 1d  | tr -d %   | awk '($2 > 70)'
+-----------------------------
+[root@server programs]# cat ps.sh
+#!/bin/bash
+
+if [ $# == 0 ]
+then
+echo "usage | redhat | centos"
+exit
+fi
+
+if [ $1 == "redhat" ]
+then
+echo "centos"
+
+elif [ $1 == "centos" ]
+then
+echo "redhat"
+
+else
+echo "Wrong entry , use correct positional para"
+
+fi
+----------------------------------------
+
