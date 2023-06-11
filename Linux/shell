@@ -17,3 +17,7 @@ read u1
 userdel -r  $u1
 echo $u1 deleted successfully
 --------------------------------
+
+
+cat /etc/passwd | awk -F ":" '{print $1 "\t" $3}' | awk '($2 > 500)'
+df -h | awk -F " " '{print $6 "\t" $5}' | sed 1d  | tr -d %   | awk '($2 > 70)'
