@@ -1,0 +1,5 @@
+a="newbombay"
+vashi()
+{
+ echo   "Happy New Year"
+}

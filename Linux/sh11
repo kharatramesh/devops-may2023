@@ -1,0 +1,15 @@
+#sh17 case...esac ..Vowels check.
+clear
+echo -e "Enter any word :\c"
+read word
+
+case $word in
+     [aeiou]*) echo Word begins with a lowercase Vowel
+	;;
+     [AEIOU]*) echo Word begins with an Uppercase Vowel
+	;;
+     *[0-9]) echo The word ends with a digit
+	;;
+     ???) echo You entered a 3 lettered word!!
+	;;
+esac

@@ -1,0 +1,15 @@
+#sh18 case...esac ..another example.
+clear
+echo -e "Press any character on your keyboard :\c"
+read char
+
+case $char in
+     [a-z]) echo Lowercase character chosen
+	;;
+     [A-Z]) echo Uppercase character chosen
+	;;
+     [0-9]) echo Numeral chosen
+	;;
+     *) echo You entered more than one character or any other character!!
+	;;
+esac

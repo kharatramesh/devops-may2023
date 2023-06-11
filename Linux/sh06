@@ -1,0 +1,15 @@
+#sh06 The test command - Use col -b to strip funny chars
+# -lt, -le, -gt, -ge, -ne, -eq   : Use this for numerical comparisions
+#  <, <=, >, >=, <>, =           : Use this for String comparisions
+clear
+tput cup 10 10
+echo -e "Enter a no from 1 to 5 : \c"
+read num
+if test $num -lt 6
+then
+tput cup 12 10
+   echo "Good"
+else
+tput cup 12 10
+   echo "Sorry only between 1 to 6"
+fi

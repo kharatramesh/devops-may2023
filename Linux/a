@@ -1,0 +1,11 @@
+./b
+echo $a
+echo hello
+vashi
+echo back to a
+
+#1. fn
+#3. executable - shell script in PATH var
+#3.              binary  in PATH var
+
+# command not found

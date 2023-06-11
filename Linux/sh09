@@ -1,0 +1,11 @@
+#sh09 The case...esac construct.. another example.. with dog/cat/parrot
+case $1 in
+     cat) echo You have entered cat
+	;;
+     dog) echo You have entered dog
+	;;
+     parrot) echo You have entered parrot
+	;;
+     *) echo Invalid entry !!
+	;;
+esac

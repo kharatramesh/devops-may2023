@@ -1,0 +1,11 @@
+#sh14 Looping : The while loop construct..Another example..Just exec No input
+#set -v   --- Sets verbose mode on
+#set -x   --- Sets debugging on
+clear
+count=10
+while [ $count -le 12 ]
+do
+    echo -e "\nStudy Linux everyday...": $count
+    echo "...and keep unemployment and the Doctor away"
+    count=`expr $count + 1`
+done

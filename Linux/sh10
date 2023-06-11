@@ -1,0 +1,15 @@
+#sh10 case...esac ..another example.with dog/cat parrot/crow whale/shark
+clear
+echo Enter cat/dog, parrot/crow, whale/shark
+read idli
+
+case $idli in
+     cat|dog) echo Animal chosen
+	;;
+     parrot|crow) echo Bird chosen
+	;;
+     whale|shark) echo Mammal chosen
+	;;
+     *) echo Invalid entry !!
+	;;
+esac

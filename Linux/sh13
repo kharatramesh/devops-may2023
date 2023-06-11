@@ -1,0 +1,22 @@
+#sh19 Looping : The while loop construct..Another example..Just exec No input
+clear
+echo Enter a number:
+read num
+clear
+while [ $num -ge 1 ]
+do
+   echo $num
+   num=`expr $num - 1`
+done
+
+read -p "Press any key to continue"
+
+for i in 1 2 3 4 5 ; do
+echo hello
+done
+
+read -p "Press any key to continue"
+
+for i in /etc/zebra/* ; do
+echo hello
+done

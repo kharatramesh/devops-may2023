@@ -1,0 +1,16 @@
+#sh13 The case...esac construct
+
+clear
+echo -e "Enter a number from 1 to 3 : \c"
+read num
+
+case $num in
+     1) echo You have entered 1
+        ;;
+     2) echo You have entered 2
+        ;;
+     3) echo You have entered 3
+        ;;
+     *) echo Between 1 to 3 only !!
+        ;;
+esac

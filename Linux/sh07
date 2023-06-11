@@ -1,0 +1,12 @@
+#sh12 Check the existence of file entered
+## usage: ./sh12  
+## see man test
+clear
+echo Enter file name
+read filename
+if [ -f $filename ]
+then
+	echo The filename you entered exists !!
+else
+	echo The filename you entered does not exist !!!
+fi

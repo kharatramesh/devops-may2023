@@ -1,0 +1,9 @@
+#sh03
+#Usage : ./sh03 filename. Script rens "fn" to "fn.loginname"
+name=$1
+set `whoami`
+mv $name $name.$1
+ls
+sleep 2
+set `date`
+echo $1 $3 $2 $6

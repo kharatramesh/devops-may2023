@@ -1,0 +1,26 @@
+#sh05
+set If you are headed in the wrong direction, God allows U turns
+echo $* : $# words
+shift 1
+echo $* : $# words
+shift 1
+echo $* : $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# words
+shift 1
+echo $*: $# word
+
